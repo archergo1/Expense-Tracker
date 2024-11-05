@@ -5,9 +5,9 @@ import IncomeExpenses from "./components/IncomeExpenses";
 import TransactionList from "./components/TransactionList";
 import AddTransaction from "./components/AddTransaction";
 
-import "./App.css";
-
 import { GlobalProvider } from "./context/GlobalState";
+
+import "./App.css";
 
 function App() {
   const [count, setCount] = useState(0);
