@@ -7,7 +7,7 @@ function AddTransaction() {
 
   const { addTransaction } = useContext(GlobalContext);
 
-  const onSubmit = () => {
+  const onSubmit = (e) => {
     e.preventDefault();
 
     const newTransaction = {
@@ -17,6 +17,8 @@ function AddTransaction() {
       amount: +amount,
     };
     addTransaction(newTransaction);
+    setText("");
+    setAmount(0);
   };
 
   return (

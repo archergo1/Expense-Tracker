@@ -9,6 +9,7 @@ export default (state, action) => {
         ),
       };
     case "ADD_TRANSACTION":
+      console.log("ADD");
       return {
         ...state,
         transactions: [action.payload, ...state.transactions],
