@@ -4,7 +4,7 @@ export default (state, action) => {
       console.log("aaa", state);
       return {
         ...state,
-        transaction: state.transactions.filter(
+        transactions: state.transactions.filter(
           (transaction) => transaction.id !== action.payload
         ),
       };
